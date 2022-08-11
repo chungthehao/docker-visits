@@ -3,6 +3,7 @@ services:
   my-redis-server: 
     image: redis
   visits-app:
+    restart: on-failure
     build: .
     container_name: visits-app_c1
     ports:

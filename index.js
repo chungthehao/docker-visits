@@ -14,7 +14,7 @@ client.set('visits', 0)
 
 app.get('/', (req, res) => {
   // Cause the node server to crash
-  process.exit(0)
+  process.exit(10)
 
   client.get('visits', (err, visits) => {
     res.send('Number of visits is ' + visits)
